@@ -1,19 +1,27 @@
 {
+  "name": "glithc-chat",
+  "module": "src/main.js",
   "type": "module",
-  "name": "class-06-sockets",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/main.js",
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon -e js,handlebars,html .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bun run src/main.js",
+    "dev": "bun --watch run src/main.js",
+    "dev2": "bun --watch -e js,handlebars,html ."
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "16.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
+    "eslint": "^8.55.0",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
+    "prettier": "^3.1.0",
     "socket.io": "^4.7.2"
   }
 }

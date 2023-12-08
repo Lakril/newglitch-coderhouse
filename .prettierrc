@@ -1,0 +1,10 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "extends": "prettier-config-google",
+  "exclude": ["node_modules/**", ".prettierrc.js", "jest.config.js"]
+}
